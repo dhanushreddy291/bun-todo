@@ -1,0 +1,84 @@
+body {
+    font-family: sans-serif;
+    line-height: 1.6;
+    margin: 20px;
+    background-color: #f4f4f4;
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+}
+
+#add-todo-form {
+    display: flex;
+    margin-bottom: 20px;
+}
+
+#add-todo-form input[type="text"] {
+    flex-grow: 1;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px 0 0 4px;
+}
+
+#add-todo-form button {
+    padding: 10px 15px;
+    background-color: #5cb85c;
+    color: white;
+    border: none;
+    border-radius: 0 4px 4px 0;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+#add-todo-form button:hover {
+    background-color: #4cae4c;
+}
+
+#todo-list {
+    list-style: none;
+    padding: 0;
+    background-color: #fff;
+    border-radius: 4px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+#todo-list li {
+    padding: 10px 15px;
+    border-bottom: 1px solid #eee;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#todo-list li:last-child {
+    border-bottom: none;
+}
+
+#todo-list li span {
+    cursor: pointer;
+    flex-grow: 1;
+    margin-right: 10px; /* Add space between text and button */
+}
+
+
+#todo-list li.completed span {
+    text-decoration: line-through;
+    color: #888;
+}
+
+#todo-list li .delete-btn {
+    background-color: #d9534f;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 3px;
+    cursor: pointer;
+    font-size: 0.9em;
+    transition: background-color 0.2s;
+}
+
+#todo-list li .delete-btn:hover {
+    background-color: #c9302c;
+}
